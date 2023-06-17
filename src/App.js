@@ -4,6 +4,7 @@
 function App() {
   return (
     <>
+      <h1>New Branch</h1>
       <h1 className="title">Hello World This New Version</h1>
       <h2>This My React App</h2>
     </>
