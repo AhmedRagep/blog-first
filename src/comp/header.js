@@ -3,8 +3,8 @@ import './header.css';
 
 const Header = () => {
   return (
-    <div>
-      <header className="hide-when-mobile">
+    <div className="myheader">
+      <header className="hide-when-mobile ahmed">
         <h1>
           <Link to='/'>Coding Hustler</Link>
         </h1>
