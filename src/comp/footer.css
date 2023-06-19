@@ -1,7 +1,12 @@
-footer{
+/*  يتم وضع هذا الاسم قبل اي كلاس وهذا الاسم يوضع في الصفحة الرئيسية */
+.myfooter footer{
   background-color: #1b1b1b;
 
   padding: 20px 0;
   text-align: center;
   font-size: 18px;
+}
+
+.myfooter .ahmed{
+  background-color: teal;
 }

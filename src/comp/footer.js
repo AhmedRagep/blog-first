@@ -4,8 +4,8 @@ import './footer.css';
 
 const Footer = () => {
   return (
-    <div>
-      <footer>
+    <div className='myfooter'>
+      <footer className='ahmed'>
         Designed and developed by coding-hustler.tech
         <span>🧡</span>
       </footer>
