@@ -1,13 +1,14 @@
 // rfc to speed
 import Header from '../comp/header';
 import Footer from '../comp/footer';
+import MainContent from '../comp/MainContent';
 
 
 const Javascript = () => {
   return (
     <>
       <Header />
-      <main>Javascript Page</main>
+      <MainContent name="Javascript Page" />
       <Footer />
     </>
   );
