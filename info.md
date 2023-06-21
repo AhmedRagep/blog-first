@@ -26,3 +26,38 @@
 - if you want back deploy 
  - open firebse and project in blog-test-af93e release history
  - and click 3 points and click roleback
+
+
+-- كيفية تغيير الهيد في الرياكت
+# npm i react-helmet-async
+
+- in index.js 
+  - add helmet async -> import { HelmetProvider } from "react-helmet-async";
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(
+    <React.StrictMode>
+      <HelmetProvider>
+      <RouterProvider router={router} />
+        <App />
+      </HelmetProvider>
+    </React.StrictMode>
+  );
+
+- in pages edit title and description in any file 
+-- example
+  # import { Helmet } from 'react-helmet-async';
+      const Home = () => {
+      return (
+        <>
+          <Helmet>
+            <title>React - home</title>
+            <meta name="description" content="home" />
+          </Helmet>
+          <Header />
+          {/* name is variable use mainconten.js */}
+          <MainContent name="Home Page" designer="Designed By Ahemd Ragep" />
+
+          <Footer />
+        </>
+      );
+    };
