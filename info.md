@@ -61,3 +61,23 @@
         </>
       );
     };
+
+
+-- لجعل الموقع تطبيق يعمل بدون انترنت
+  - اولا تنشئ تطبيق جديد بالامر
+  # npx create-react-app pwa --template cra-template-pwa
+  - ندخل الي التطبيق وناخذ ملفين من مجلد السورس هما 
+  service-worker.js و serviceWorkerRegistration.js
+  - وننقلهم الي ملف السورس في موقعنا
+  - ثم نذهب الي ملف البابليك وناخذ الملف 
+  manifest.json , logo129.png, logo512.png
+  - نكتب الامريين في ملف index.js
+  # import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+  # serviceWorkerRegistration.register(); وهذا في الاخر 
+  - والان سوف يعمل ولاكن اذا لم يعمل نكتب الاوامر الثالية
+  # npm run build
+  # npm i -g serve
+  # serve -s build
+
+-- موقع رائع لعمل ملف manifest.json
+# https://www.simicart.com/manifest-generator.html/
